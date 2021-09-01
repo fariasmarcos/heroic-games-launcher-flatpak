@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>io.github.flavioislima.HeroicGamesLauncher</id>
+  <provides><id>io.github.flavioislima.HeroicGamesLauncher.desktop</id></provides>
+  <launchable type="desktop-id">io.github.flavioislima.HeroicGamesLauncher.desktop</launchable>
+  <name>Heroic Games Launcher</name>
+  <developer_name>Flávio F Lima</developer_name>
+  <summary>A Native GUI Epic Games Launcher for Linux, Windows and Mac.</summary>
+  <project_license>GPL-3.0-or-later</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <url type="homepage">https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher</url>
+  <url type="help">https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki</url>
+  <url type="bugtracker">https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues</url>
+  <description>
+    <p>Heroic is a native GUI alternative to the Epic Games Launcher for Linux, Windows and MacOS. 
+    It is open source under GPLv3 and is maintained by a community of developers that works for FREE on their FREE TIME. 
+    Heroic for now is just a GUI for Legendary, which is a CLI tool that deals with the login, download and launch the games. 
+    Support for other stores is planned in the future.</p>
+  </description>
+  <releases>
+    <release version="1.9.2" date="2021-08-09"/>
+  </releases>
+  <content_rating type="oars-1.1" />
+</component>
