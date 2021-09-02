@@ -10,12 +10,12 @@ Building the package locally is the only way to install the flatpak for now.
 
 Make sure you have flathub enabled:
 ```
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
 Install the required runtimes:
 ```
-flatpak install flathub org.freedesktop.Platform//20.08 \
+flatpak install --user flathub org.freedesktop.Platform//20.08 \
  org.freedesktop.Platform.Compat.i386//20.08 \
  org.freedesktop.Sdk//20.08 \
  org.electronjs.Electron2.BaseApp//20.08 \
@@ -29,6 +29,6 @@ Run the build script:
 
 Install and run:
 ```
-flatpak install heroic-test io.github.flavioislima.HeroicGamesLauncher
+flatpak install --user heroic-test io.github.flavioislima.HeroicGamesLauncher
 flatpak run io.github.flavioislima.HeroicGamesLauncher # --enable-logging to debug.
 ```
