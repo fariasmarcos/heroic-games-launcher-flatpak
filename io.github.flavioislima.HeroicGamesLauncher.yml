@@ -9,11 +9,15 @@ command: heroic.sh
 finish-args:
   - --share=ipc
   - --socket=x11
-  - --device=all
-  - --filesystem=/run/.heim_org.h5l.kcm-socket
   - --socket=pulseaudio
   - --share=network
+  - --device=all
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --talk-name=com.canonical.AppMenu.Registrar
+  - --talk-name=com.canonical.indicator.application
   - --allow=multiarch
+  - --allow=devel
 
 add-extensions:
   org.freedesktop.Platform.Compat.i386:
