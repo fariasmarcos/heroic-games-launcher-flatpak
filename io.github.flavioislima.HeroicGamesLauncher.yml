@@ -80,6 +80,7 @@ modules:
     buildsystem: simple
     build-commands:
       - install -Dm755 -t /app/bin/ heroic.sh
+      - install -Dm755 -t /app/bin/ legendary.sh
       - install -Dm644 -t /app/share/applications/ io.github.flavioislima.HeroicGamesLauncher.desktop
       - install -Dm644 -t /app/share/metainfo/ io.github.flavioislima.HeroicGamesLauncher.appdata.xml
       - install -Dm644 heroic/resources/app.asar.unpacked/build/icon.png /app/share/icons/hicolor/512x512/apps/io.github.flavioislima.HeroicGamesLauncher.png
@@ -92,10 +93,10 @@ modules:
         sha256: cec01c9bd7cac845475f2c3b8613203a6fc2114ec9c0d00d04be3b38a5033c36
         dest: heroic
         dest-filename: heroic.tar.xz
-      - type: script
-        dest-filename: heroic.sh
-        commands:
-          - zypak-wrapper.sh /app/opt/heroic/heroic "$@"
+      - type: file
+        path: heroic.sh
+      - type: file
+        path: legendary.sh
       - type: file
         path: io.github.flavioislima.HeroicGamesLauncher.desktop
       - type: file
