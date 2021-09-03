@@ -1,6 +1,6 @@
 ### ⚠️ Warning: This repository is for testing purposes only! ⚠️
 
-You may be better off installing the oficial binaries provided by Heroic Games Launcher's own repo.
+It isn't a functional build yet. You'll be better off installing the official binaries provided by Heroic Games Launcher's own repo.
 
 # Heroic Games Launcher on Flatpak
 A Native GUI Epic Games Launcher for Linux, Windows and Mac. This repository allows installing Heroic Games Launcher through Flatpak.
@@ -24,11 +24,11 @@ flatpak install --user flathub org.freedesktop.Platform//20.08 \
 
 Run the build script:
 ```
-./build.sh # It will ask for your password, so it can add a local remote called heroic-test.
+./build.sh #you may need to enter your password in order to set up the local remote.
 ```
 
 Install and run:
 ```
 flatpak install --user heroic-test io.github.flavioislima.HeroicGamesLauncher
-flatpak run io.github.flavioislima.HeroicGamesLauncher # --enable-logging to debug.
+flatpak run io.github.flavioislima.HeroicGamesLauncher #--enable-logging to debug.
 ```
