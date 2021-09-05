@@ -5,6 +5,7 @@ runtime: org.freedesktop.Platform
 runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 command: heroic
+separate-locales: false
 
 finish-args:
   - --share=ipc
@@ -90,8 +91,8 @@ modules:
       - mv heroic /app/opt/
     sources:
       - type: archive
-        url: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.9.2/heroic-1.9.2.tar.xz
-        sha256: cec01c9bd7cac845475f2c3b8613203a6fc2114ec9c0d00d04be3b38a5033c36
+        url: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.9.3/heroic-1.9.3.tar.xz
+        sha256: 275a97d9017f9b1711b3547b0b5e4a170ef389b2bfb6316375b07bb7e91ea96d
         dest: heroic
         dest-filename: heroic.tar.xz
       - type: file
